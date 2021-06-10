@@ -1,3 +1,4 @@
+/* General CSS Setup */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
 body {
     font-family: "Roboto", sans-serif;
 }
-
+/*Greeting Section, First Screen*/
 header {
     display: flex;
     background-image: url("../images/robert-zunikoff-ebno_NwaOns-unsplash.jpg");
@@ -33,8 +34,461 @@ header {
 .name {
     color:lightsteelblue;
 }
-
+/* About Section */
 .aboutsection {
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: whitesmoke;
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
 }
+
+#pic {
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pic img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    
+}
+
+.aboutsection h2 {
+    grid-area: 1 / 1 / span 1 / span 2;
+    align-self: baseline;
+    margin-top: 10px;
+}
+
+#abouttext {
+    grid-area: 1 / 2 / span 1 / span 1;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+/* Skills Section including CSS Animation of Skills */
+#skillssection {
+    grid-area: 2 / 1 / span 1 / span 2;
+    width: 50%;
+}
+
+.skillsbar {
+    display: flex;
+    max-width: 90%;
+    height: 2rem;
+    position: relative;
+    background-color: lightgray;
+    margin: 20px auto;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+
+.percentage {
+    color: black;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.skill {
+    display: flex;
+    width: 80px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background-color: steelblue;
+    color: white;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#python {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    animation: Animate-Python 3s;
+    -webkit-animation: Animate-Python 3s;
+    -moz-animation: Animate-Python 3s;
+    -o-animation: Animate-Python 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-Python {
+    from {
+        width: 80px;
+    } to {
+        width: 80%;
+    }
+}
+@-webkit-keyframes Animate-Python {
+    from {
+        width: 80px;
+    } to {
+        width: 80%;
+    }
+}
+@-moz-keyframes Animate-Python {
+    from {
+        width: 80px;
+    } to {
+        width: 80%;
+    }
+}
+@-o-keyframes Animate-Python {
+    from {
+        width: 80px;
+    } to {
+        width: 80%;
+    }
+}
+
+#dash {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    animation: Animate-Dash 3s;
+    -webkit-animation: Animate-Dash 3s;
+    -moz-animation: Animate-Dash 3s;
+    -o-animation: Animate-Dash 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-Dash {
+    from {
+        width: 80px;
+    } to {
+        width: 60%;
+    }
+}
+@-webkit-keyframes Animate-Dash {
+    from {
+        width: 80px;
+    } to {
+        width: 60%;
+    }
+}
+@-moz-keyframes Animate-Dash {
+    from {
+        width: 80px;
+    } to {
+        width: 60%;
+    }
+}
+@-o-keyframes Animate-Dash {
+    from {
+        width: 80px;
+    } to {
+        width: 60%;
+    }
+}
+
+#html {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    animation: Animate-Html 3s;
+    -webkit-animation: Animate-Html 3s;
+    -moz-animation: Animate-Html 3s;
+    -o-animation: Animate-Html 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-Html {
+    from {
+        width: 80px;
+    } to {
+        width: 70%;
+    }
+}
+@-webkit-keyframes Animate-Html {
+    from {
+        width: 80px;
+    } to {
+        width: 70%;
+    }
+}
+@-moz-keyframes Animate-Html {
+    from {
+        width: 80px;
+    } to {
+        width: 70%;
+    }
+}
+@-o-keyframes Animate-Html {
+    from {
+        width: 80px;
+    } to {
+        width: 70%;
+    }
+}
+
+
+#css {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    animation: Animate-Css 3s;
+    -webkit-animation: Animate-Css 3s;
+    -moz-animation: Animate-Css 3s;
+    -o-animation: Animate-Css 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-Css {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-webkit-keyframes Animate-Css {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-moz-keyframes Animate-Css {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-o-keyframes Animate-Css {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+
+#css {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    animation: Animate-Css 3s;
+    -webkit-animation: Animate-Css 3s;
+    -moz-animation: Animate-Css 3s;
+    -o-animation: Animate-Css 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-Css {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-webkit-keyframes Animate-Css {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-moz-keyframes Animate-Css {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-o-keyframes Animate-Css {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+
+#javascript {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    animation: Animate-Javascript 3s;
+    -webkit-animation: Animate-Javascript 3s;
+    -moz-animation: Animate-Javascript 3s;
+    -o-animation: Animate-Javascript 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-Javascript {
+    from {
+        width: 80px;
+    } to {
+        width: 60%;
+    }
+}
+@-webkit-keyframes Animate-Javascript {
+    from {
+        width: 80px;
+    } to {
+        width: 60%;
+    }
+}
+@-moz-keyframes Animate-Javascript {
+    from {
+        width: 80px;
+    } to {
+        width: 60%;
+    }
+}
+@-o-keyframes Animate-Javascript {
+    from {
+        width: 80px;
+    } to {
+        width: 60%;
+    }
+}
+
+#react {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    animation: Animate-React 3s;
+    -webkit-animation: Animate-React 3s;
+    -moz-animation: Animate-React 3s;
+    -o-animation: Animate-React 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-React {
+    from {
+        width: 80px;
+    } to {
+        width: 25%;
+    }
+}
+@-webkit-keyframes Animate-React {
+    from {
+        width: 80px;
+    } to {
+        width: 25%;
+    }
+}
+@-moz-keyframes Animate-React {
+    from {
+        width: 80px;
+    } to {
+        width: 25%;
+    }
+}
+@-o-keyframes Animate-React {
+    from {
+        width: 80px;
+    } to {
+        width: 25%;
+    }
+}
+
+#nodejs {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    animation: Animate-Nodejs 3s;
+    -webkit-animation: Animate-Nodejs 3s;
+    -moz-animation: Animate-Nodejs 3s;
+    -o-animation: Animate-Nodejs 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-Nodejs {
+    from {
+        width: 80px;
+    } to {
+        width: 20%;
+    }
+}
+@-webkit-keyframes Animate-Nodejs {
+    from {
+        width: 80px;
+    } to {
+        width: 20%;
+    }
+}
+@-moz-keyframes Animate-Nodejs {
+    from {
+        width: 80px;
+    } to {
+        width: 20%;
+    }
+}
+@-o-keyframes Animate-Nodejs {
+    from {
+        width: 80px;
+    } to {
+        width: 20%;
+    }
+}
+
+#mongodb {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    animation: Animate-Mongodb 3s;
+    -webkit-animation: Animate-Mongodb 3s;
+    -moz-animation: Animate-Mongodb 3s;
+    -o-animation: Animate-Mongodb 3s;
+    height: 2rem;
+    background-color: lightsteelblue;
+}
+@keyframes Animate-Mongodb {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-webkit-keyframes Animate-Mongodb {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-moz-keyframes Animate-Mongodb {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+@-o-keyframes Animate-Mongodb {
+    from {
+        width: 80px;
+    } to {
+        width: 50%;
+    }
+}
+
+/*Project Section*/
+
