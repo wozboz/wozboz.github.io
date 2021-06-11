@@ -3,16 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 h2 {
     font-size: 3rem;
+    font-family: "Roboto", sans-serif;
 }
 
 /*Greeting Section, First Screen*/
@@ -38,6 +39,7 @@ header {
 
 .name {
     color:lightsteelblue;
+    font-family: "Roboto";
 }
 /* About Section */
 .aboutsection {
@@ -87,6 +89,7 @@ header {
 .skillsbar {
     display: flex;
     max-width: 90%;
+    min-width: 70%;
     height: 2rem;
     position: relative;
     background-color: lightgray;
@@ -115,13 +118,15 @@ header {
     justify-content: center;
 }
 
-
 #python {
     position: absolute;
     left: 0;
     display: flex;
     align-items: center;
     width: 80%;
+}
+
+#python.start {
     animation: Animate-Python 3s;
     -webkit-animation: Animate-Python 3s;
     -moz-animation: Animate-Python 3s;
@@ -164,6 +169,9 @@ header {
     display: flex;
     align-items: center;
     width: 60%;
+}
+
+#dash.start{
     animation: Animate-Dash 3s;
     -webkit-animation: Animate-Dash 3s;
     -moz-animation: Animate-Dash 3s;
@@ -200,12 +208,17 @@ header {
     }
 }
 
+
+
 #html {
     position: absolute;
     left: 0;
     display: flex;
     align-items: center;
     width: 70%;
+}
+
+#html.start {
     animation: Animate-Html 3s;
     -webkit-animation: Animate-Html 3s;
     -moz-animation: Animate-Html 3s;
@@ -249,6 +262,9 @@ header {
     display: flex;
     align-items: center;
     width: 50%;
+}
+
+#css.start {
     animation: Animate-Css 3s;
     -webkit-animation: Animate-Css 3s;
     -moz-animation: Animate-Css 3s;
@@ -285,47 +301,6 @@ header {
     }
 }
 
-#css {
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
-    width: 50%;
-    animation: Animate-Css 3s;
-    -webkit-animation: Animate-Css 3s;
-    -moz-animation: Animate-Css 3s;
-    -o-animation: Animate-Css 3s;
-    height: 2rem;
-    background-color: lightsteelblue;
-}
-@keyframes Animate-Css {
-    from {
-        width: 80px;
-    } to {
-        width: 50%;
-    }
-}
-@-webkit-keyframes Animate-Css {
-    from {
-        width: 80px;
-    } to {
-        width: 50%;
-    }
-}
-@-moz-keyframes Animate-Css {
-    from {
-        width: 80px;
-    } to {
-        width: 50%;
-    }
-}
-@-o-keyframes Animate-Css {
-    from {
-        width: 80px;
-    } to {
-        width: 50%;
-    }
-}
 
 #javascript {
     position: absolute;
@@ -333,6 +308,9 @@ header {
     display: flex;
     align-items: center;
     width: 60%;
+}
+
+#javascript.start{
     animation: Animate-Javascript 3s;
     -webkit-animation: Animate-Javascript 3s;
     -moz-animation: Animate-Javascript 3s;
@@ -369,12 +347,17 @@ header {
     }
 }
 
+
 #react {
     position: absolute;
     left: 0;
     display: flex;
     align-items: center;
     width: 25%;
+
+}
+
+#react.start{
     animation: Animate-React 3s;
     -webkit-animation: Animate-React 3s;
     -moz-animation: Animate-React 3s;
@@ -417,6 +400,10 @@ header {
     display: flex;
     align-items: center;
     width: 20%;
+
+}
+
+#nodejs.start {
     animation: Animate-Nodejs 3s;
     -webkit-animation: Animate-Nodejs 3s;
     -moz-animation: Animate-Nodejs 3s;
@@ -459,6 +446,10 @@ header {
     display: flex;
     align-items: center;
     width: 50%;
+
+}
+
+#mongodb.start{
     animation: Animate-Mongodb 3s;
     -webkit-animation: Animate-Mongodb 3s;
     -moz-animation: Animate-Mongodb 3s;
@@ -570,12 +561,23 @@ header {
     grid-area: 2 / 1 / span 1 / span 1;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
+
+.contactsection form .formitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 footer {
     background-color: black;
     color: white;
     height: 30px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
 }

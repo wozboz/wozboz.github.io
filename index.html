@@ -3,6 +3,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="resources/css/style.css">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <meta charset="UTF-8">
@@ -116,12 +117,19 @@
         <section class="contactsection">
             <h2>Contact</h2>
             <form>
-                <label for="name">Your name:</label>
-                <input type="text" name="name">
-                <label for="email">Your E-Mail Address:</label>
-                <input type="email" name="email">
-                <label for="message">Your message:</label>
-                <textarea rows="10" cols="30" name="message"></textarea>
+                <div class="formitem">
+                    <label for="name">Your name:</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="formitem">
+                    <label for="email">Your E-Mail Address:</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="formitem">
+                    <label for="message">Your message:</label>
+                    <textarea rows="10" cols="30" name="message"></textarea>
+                </div>
+                
                 <button>Send</button>
             </form>
             <div class="social">
@@ -130,7 +138,8 @@
         </section>
     </main>
     <footer>
-        <p>copyright by me 2021</p>
+        <p>&copy; Philip Scheidl 2021</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
