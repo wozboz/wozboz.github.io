@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="resources/css/style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,10 +97,36 @@
         </section>
         <section class="projectssection">
             <h2>These are my most recent projects:</h2>
+            <div class="projectdiv">
+                <div class="projectcard">
+                    Project 1
+                    <p>content content</p>
+                </div>
+                <div class="projectcard">
+                    Project 2
+                    <p>content content</p>
+                </div>
+                <div class="projectcard">
+                    Project 3
+                    <p>content content</p>
+                </div>
+            </div>
+            
         </section>
         <section class="contactsection">
-            <h2>You can find and contact me here:</h2>
-            <p>Linkedin</p><p>E-Mail</p><p>Github</p>
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Your name:</label>
+                <input type="text" name="name">
+                <label for="email">Your E-Mail Address:</label>
+                <input type="email" name="email">
+                <label for="message">Your message:</label>
+                <textarea rows="10" cols="30" name="message"></textarea>
+                <button>Send</button>
+            </form>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/philip-scheidl"><span class="iconify" data-icon="mdi:linkedin"></span></a><a href="https://github.com/wozboz"><span class="iconify" data-icon="mdi:github" data-inline="false"></span></a>
+            </div>
         </section>
     </main>
     <footer>
