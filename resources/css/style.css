@@ -15,6 +15,9 @@ h2 {
     font-size: 3rem;
     font-family: "Roboto", sans-serif;
 }
+a {
+    text-decoration: none;
+}
 
 /*Greeting Section, First Screen*/
 header {
@@ -40,7 +43,9 @@ header {
 .name {
     color:lightsteelblue;
     font-family: "Roboto";
+    opacity: 1;
 }
+
 /* About Section */
 .aboutsection {
     padding-top: 10px;
@@ -66,7 +71,6 @@ header {
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
-    
 }
 
 .aboutsection h2 {
@@ -80,10 +84,11 @@ header {
     font-size: 1.1rem;
     padding: 10px;
 }
+
 /* Skills Section including CSS Animation of Skills */
 #skillssection {
     grid-area: 2 / 1 / span 1 / span 2;
-    width: 50%;
+    width: 70%;
 }
 
 .skillsbar {
@@ -511,7 +516,7 @@ header {
     background-color: whitesmoke;
     width: 200px;
     border-radius: 10px;
-    height: 50%;
+    height: 25rem;
     align-items: center;
     justify-content: space-around;
 }
@@ -519,6 +524,7 @@ header {
 .projectssection h2 {
     grid-area: 1 / 1 / span 1 / span 1;
     justify-self: center;
+    text-align: center;
 }
 
 /*contact section*/
@@ -580,4 +586,444 @@ footer {
     padding-left: 20px;
     display: flex;
     align-items: center;
+}
+
+/* Responsive Adjustments Section */
+@media only screen and (max-height: 900px) {
+
+    .aboutsection {
+        height: 100vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .aboutsection h2 {
+        display: none;
+    }
+
+
+    #skillssection {
+        grid-area: 2 / 1 / span 1 / span 2;
+        width: 90%;
+    }
+
+    #pic img {
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #skillssection {
+        grid-area: 2 / 1 / span 1 / span 2;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #greeting {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    #python {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc(80% + 40px);
+    }
+
+    #python.start {
+        animation: Animate-Python 3s;
+        -webkit-animation: Animate-Python 3s;
+        -moz-animation: Animate-Python 3s;
+        -o-animation: Animate-Python 3s;
+        height: 2rem;
+        background-color: lightsteelblue;
+    }
+    @keyframes Animate-Python {
+        from {
+            width: 80px;
+        } to {
+            width: calc(80% + 40px);
+        }
+    }
+    @-webkit-keyframes Animate-Python {
+        from {
+            width: 80px;
+        } to {
+            width: calc(80% + 40px);
+        }
+    }
+    @-moz-keyframes Animate-Python {
+        from {
+            width: 80px;
+        } to {
+            width: calc(80% + 40px);
+        }
+    }
+    @-o-keyframes Animate-Python {
+        from {
+            width: 80px;
+        } to {
+            width: calc(80% + 40px);
+        }
+    }
+
+    #dash {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc(60% + 40px);
+    }
+
+    #dash.start{
+        animation: Animate-Dash 3s;
+        -webkit-animation: Animate-Dash 3s;
+        -moz-animation: Animate-Dash 3s;
+        -o-animation: Animate-Dash 3s;
+        height: 2rem;
+        background-color: lightsteelblue;
+    }
+    @keyframes Animate-Dash {
+        from {
+            width: 80px;
+        } to {
+            width: calc(60% + 40px);
+        }
+    }
+    @-webkit-keyframes Animate-Dash {
+        from {
+            width: 80px;
+        } to {
+            width: calc(60% + 40px);
+        }
+    }
+    @-moz-keyframes Animate-Dash {
+        from {
+            width: 80px;
+        } to {
+            width: calc(60% + 40px);
+        }
+    }
+    @-o-keyframes Animate-Dash {
+        from {
+            width: 80px;
+        } to {
+            width: calc(60% + 40px);
+        }
+    }
+
+    #html {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc(70% + 40px);
+    }
+
+    #html.start {
+        animation: Animate-Html 3s;
+        -webkit-animation: Animate-Html 3s;
+        -moz-animation: Animate-Html 3s;
+        -o-animation: Animate-Html 3s;
+        height: 2rem;
+        background-color: lightsteelblue;
+    }
+    @keyframes Animate-Html {
+        from {
+            width: 80px;
+        } to {
+            width: calc(70% + 40px);
+        }
+    }
+    @-webkit-keyframes Animate-Html {
+        from {
+            width: 80px;
+        } to {
+            width: calc(70% + 40px);
+        }
+    }
+    @-moz-keyframes Animate-Html {
+        from {
+            width: 80px;
+        } to {
+            width: calc(70% + 40px);
+        }
+    }
+    @-o-keyframes Animate-Html {
+        from {
+            width: 80px;
+        } to {
+            width: calc(70% + 40px);
+        }
+    }
+
+
+    #css {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc(50% + 40px);
+    }
+
+    #css.start {
+        animation: Animate-Css 3s;
+        -webkit-animation: Animate-Css 3s;
+        -moz-animation: Animate-Css 3s;
+        -o-animation: Animate-Css 3s;
+        height: 2rem;
+        background-color: lightsteelblue;
+    }
+    @keyframes Animate-Css {
+        from {
+            width: 80px;
+        } to {
+            width: calc(50% + 40px);
+        }
+    }
+    @-webkit-keyframes Animate-Css {
+        from {
+            width: 80px;
+        } to {
+            width: calc(50% + 40px);
+        }
+    }
+    @-moz-keyframes Animate-Css {
+        from {
+            width: 80px;
+        } to {
+            width: calc(50% + 40px);
+        }
+    }
+    @-o-keyframes Animate-Css {
+        from {
+            width: 80px;
+        } to {
+            width: calc(50% + 40px);
+        }
+    }
+
+
+    #javascript {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc(60% + 40px);
+    }
+
+    #javascript.start{
+        animation: Animate-Javascript 3s;
+        -webkit-animation: Animate-Javascript 3s;
+        -moz-animation: Animate-Javascript 3s;
+        -o-animation: Animate-Javascript 3s;
+        height: 2rem;
+        background-color: lightsteelblue;
+    }
+    @keyframes Animate-Javascript {
+        from {
+            width: 80px;
+        } to {
+            width: calc(60% + 40px);
+        }
+    }
+    @-webkit-keyframes Animate-Javascript {
+        from {
+            width: 80px;
+        } to {
+            width: calc(60% + 40px);
+        }
+    }
+    @-moz-keyframes Animate-Javascript {
+        from {
+            width: 80px;
+        } to {
+            width: calc(60% + 40px);
+        }
+    }
+    @-o-keyframes Animate-Javascript {
+        from {
+            width: 80px;
+        } to {
+            width: calc(60% + 40px);
+        }
+    }
+
+
+    #react {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc(25% + 40px);
+
+    }
+
+    #react.start{
+        animation: Animate-React 3s;
+        -webkit-animation: Animate-React 3s;
+        -moz-animation: Animate-React 3s;
+        -o-animation: Animate-React 3s;
+        height: 2rem;
+        background-color: lightsteelblue;
+    }
+    @keyframes Animate-React {
+        from {
+            width: 80px;
+        } to {
+            width: calc(25% + 40px);
+        }
+    }
+    @-webkit-keyframes Animate-React {
+        from {
+            width: 80px;
+        } to {
+            width: calc(25% + 40px);
+        }
+    }
+    @-moz-keyframes Animate-React {
+        from {
+            width: 80px;
+        } to {
+            width: calc(25% + 40px);
+        }
+    }
+    @-o-keyframes Animate-React {
+        from {
+            width: 80px;
+        } to {
+            width: calc(25% + 40px);
+        }
+    }
+
+    #nodejs {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc(20% + 40px);
+
+    }
+
+    #nodejs.start {
+        animation: Animate-Nodejs 3s;
+        -webkit-animation: Animate-Nodejs 3s;
+        -moz-animation: Animate-Nodejs 3s;
+        -o-animation: Animate-Nodejs 3s;
+        height: 2rem;
+        background-color: lightsteelblue;
+    }
+    @keyframes Animate-Nodejs {
+        from {
+            width: 80px;
+        } to {
+            width: calc(20% + 40px);
+        }
+    }
+    @-webkit-keyframes Animate-Nodejs {
+        from {
+            width: 80px;
+        } to {
+            width: calc(20% + 40px);
+        }
+    }
+    @-moz-keyframes Animate-Nodejs {
+        from {
+            width: 80px;
+        } to {
+            width: calc(20% + 40px);
+        }
+    }
+    @-o-keyframes Animate-Nodejs {
+        from {
+            width: 80px;
+        } to {
+            width: calc(20% + 40px);
+        }
+    }
+
+    #mongodb {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc(50% + 40px);
+
+    }
+
+    #mongodb.start{
+        animation: Animate-Mongodb 3s;
+        -webkit-animation: Animate-Mongodb 3s;
+        -moz-animation: Animate-Mongodb 3s;
+        -o-animation: Animate-Mongodb 3s;
+        height: 2rem;
+        background-color: lightsteelblue;
+    }
+    @keyframes Animate-Mongodb {
+        from {
+            width: 80px;
+        } to {
+            width: calc(50% + 40px);
+        }
+    }
+    @-webkit-keyframes Animate-Mongodb {
+        from {
+            width: 80px;
+        } to {
+            width: calc(50% + 40px);
+        }
+    }
+    @-moz-keyframes Animate-Mongodb {
+        from {
+            width: 80px;
+        } to {
+            width: calc(50% + 40px);
+        }
+    }
+    @-o-keyframes Animate-Mongodb {
+        from {
+            width: 80px;
+        } to {
+            width: calc(50% + 40px);
+        }
+    }
+
+    .projectssection {
+        height: 100%;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+        grid-gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    
+}
+
+@media only screen and (max-height: 600px){
+    .aboutsection {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .aboutsection {
+        height: 100%;
+    }
 }
